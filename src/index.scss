@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .app {
+    @apply bg-main-light-bg dark:bg-main-dark-bg min-h-screen text-main-color duration-500;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-300 dark:bg-main-dark-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-main-color;
+  }
+  .customContainer {
+    @apply px-3;
+  }
+  .mainHeader {
+    @apply sticky top-0 relative;
+  }
+  .navItemHover{
+    @apply hover:bg-zinc-600 hover:bg-opacity-30 rounded-md duration-200
+  }
+}
