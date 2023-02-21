@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import SiteSettings from '../siteSettings/SiteSettings'
+import { Link } from 'react-router-dom'
+
 const NavBar = () => {
   const [nav, setNav] = useState(false)
 
@@ -41,6 +43,7 @@ const NavBar = () => {
           <p className='navItemHover p-2'>2</p>
           <p className='navItemHover p-2'>3</p>
           <p className='navItemHover p-2'>4</p>
+          <Link to='/service' >Service</Link>
           <SiteSettings />
         </div>
       </nav>
