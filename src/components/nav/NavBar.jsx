@@ -54,7 +54,7 @@ const NavBar = () => {
           </Link>
           <Link
             className="flex items-center navItemHover p-2"
-            to="/"
+            to="/service"
             onClick={() => {
               setNav(!nav);
             }}
