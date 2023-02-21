@@ -25,6 +25,6 @@
     @apply sticky top-0 relative;
   }
   .navItemHover{
-    @apply hover:bg-zinc-600 hover:bg-opacity-30 rounded-md duration-200
+    @apply hover:bg-slate-200 dark:hover:bg-zinc-600 hover:bg-opacity-20 rounded-md duration-200
   }
 }

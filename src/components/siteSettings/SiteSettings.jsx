@@ -17,13 +17,13 @@ const SiteSettings = () => {
   }
   return (
     <div>
-      <div className=''>
+      <div className={`${open ? 'bg-slate-200 bg-opacity-20 dark:bg-zinc-600 dark:bg-opacity-20  rounded-md' : ''}`}>
         <button
           onClick={handleOpen}
           className='flex justify-between items-center navItemHover w-full text-start p-2'
         >
           <p>Settings</p>
-          <div className={open ? 'rotate-180 duration-700 ease-in-out' : ''}>
+          <div className={open ? 'rotate-180 ease-in-out' : ''}>
             <MdKeyboardArrowDown />
           </div>
         </button>
@@ -32,14 +32,14 @@ const SiteSettings = () => {
             open ? 'min-h-fit overflow-visible' : 'h-0 overflow-hidden'
           }`}
         >
-          <div className=''>
+          <div className={`${openThemes ? 'bg-slate-200 bg-opacity-20 dark:bg-zinc-600 dark:bg-opacity-20 rounded-md' : ''}`}>
             <button
               onClick={handleOpenThemes}
-              className='flex justify-between items-center navItemHover w-full text-start py-2 px-6'
+              className='flex justify-between items-center navItemHover w-full text-start py-2 pl-6 pr-2'
             >
               <p>Themes</p>
               <div
-                className={openThemes ? 'rotate-180 duration-700 ease-in-out' : ''}
+                className={openThemes ? 'rotate-180 ease-in-out' : ''}
               >
                 <MdKeyboardArrowDown />
               </div>
@@ -54,14 +54,14 @@ const SiteSettings = () => {
               <Themes />
             </div>
           </div>
-          <div className=''>
+          <div className={`${openLanguages ? 'bg-slate-200 bg-opacity-20 dark:bg-zinc-600 dark:bg-opacity-20 rounded-md' : ''}`}>
             <button
               onClick={handleOpenLanguages}
-              className='flex justify-between items-center navItemHover w-full text-start py-2 px-6'
+              className='flex justify-between items-center navItemHover w-full text-start py-2 pl-6 pr-2'
             >
               <p>Languages</p>
               <div
-                className={openLanguages ? 'rotate-180 duration-700 ease-in-out' : ''}
+                className={openLanguages ? 'rotate-180 ease-in-out' : ''}
               >
                 <MdKeyboardArrowDown />
               </div>

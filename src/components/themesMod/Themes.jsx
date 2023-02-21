@@ -49,17 +49,28 @@ const Themes = () => {
   }, [theme])
 
   return (
-    <div className='ml-6 text-main-color dark:bg-slate-700 bg-gray-100 rounded'>
+    <div className='flex flex-col ml-6 text-gray-800 dark:text-white rounded'>
       {options.map(opt => (
-        <button
-          key={opt.text}
+        <div
+          className='navItemHover flex items-center cursor-pointer '
           onClick={() => setTheme(opt.text)}
-          className={`w-8 h-8 leading-9 text-xl rounded-full m-1 ${
-            theme === opt.text && 'text-sky-600'
-          } `}
         >
-          {<opt.icon></opt.icon>}
-        </button>
+          <button
+            key={opt.text}
+            className={`w-8 h-8 flex justify-center items-center leading-9 text-xl rounded-full m-1 bg-gray-200 dark:bg-slate-700 ${
+              theme === opt.text && 'text-main-color '
+            } `}
+          >
+            {<opt.icon></opt.icon>}
+          </button>
+          <p
+            className={`${
+              theme === opt.text && 'text-main-color'
+            } `}
+          >
+            {opt.text}
+          </p>
+        </div>
       ))}
     </div>
   )
