@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
+import { GiHealing} from "react-icons/gi";
 import SiteSettings from "../siteSettings/SiteSettings";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const NavBar = () => {
         }
       ></div>
       <nav
-        className={` border border-t-0 border-main-color rounded-b-2xl w-80 flex flex-col z-50 absolute pb-3 right-0 ease-in-out customContainer container duration-500 bg-main-light-bg dark:bg-main-dark-bg 
+        className={`font-bold border border-t-0 border-main-color rounded-b-2xl w-80 flex flex-col z-50 absolute pb-3 right-0 ease-in-out customContainer container duration-500 bg-main-light-bg dark:bg-main-dark-bg 
       ${nav ? "scale-100 top-0 opacity-100" : "scale-0 -top-32 opacity-0"}`}
       >
         <div
@@ -39,24 +40,29 @@ const NavBar = () => {
           {!nav ? <AiOutlineMenu /> : <AiOutlineClose />}
         </div>
         <div className="pt-6">
-        <Link
+          <Link
+            className="flex items-center navItemHover p-2"
             to="/"
             onClick={() => {
               setNav(!nav);
             }}
           >
-            <p className="navItemHover p-2">Головна</p>
+            <div className="text-2xl mr-2">
+              <AiFillHome />
+            </div>
+            <p className=" ">Головна</p>
           </Link>
-          <p className="navItemHover p-2">1</p>
-          <p className="navItemHover p-2">2</p>
-          <p className="navItemHover p-2">3</p>
           <Link
-            to="/service"
+            className="flex items-center navItemHover p-2"
+            to="/"
             onClick={() => {
               setNav(!nav);
             }}
           >
-            <p className="navItemHover p-2">Послуги</p>
+            <div className="text-2xl mr-2">
+              <GiHealing />
+            </div>
+            <p className=" ">Послуги</p>
           </Link>
 
           <SiteSettings />

@@ -9,8 +9,8 @@ import Header from './components/header/Header'
 function App() {
   return (
     <div className="app ">
-      <div className="sticky top-0 max-w-screen-xl w-full mx-auto">
-        <Header></Header>
+      <div className="max-w-screen-xl w-full mx-auto">
+        <Header ></Header>
         <Routes>
           <Route path='/' element={<Home />} ></Route>
           <Route path='/service' element={<Service />} ></Route>
