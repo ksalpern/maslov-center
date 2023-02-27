@@ -1,0 +1,13 @@
+{
+  "Navbar": {
+    "Home": "Home",
+    "Services": "Services",
+    "Settings": "Settings",
+    "Themes": "Themes",
+    "Languages": "Languages"
+  },
+  "Banner": {
+    "Title": "Your path to total wellness starts here!",
+    "Subtitle": "Restoring health is a process that requires time and patience. Our experts know how to help you navigate this path, so you can once again enjoy a full and active life."
+  }
+}

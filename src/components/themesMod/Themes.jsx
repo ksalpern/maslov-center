@@ -49,7 +49,7 @@ const Themes = () => {
   }, [theme])
 
   return (
-    <div className='flex flex-col ml-6 text-gray-800 dark:text-white rounded'>
+    <div className='flex ml-6 text-gray-800 dark:text-white rounded'>
       {options.map(opt => (
         <div
           className='navItemHover flex items-center cursor-pointer '
@@ -57,7 +57,7 @@ const Themes = () => {
         >
           <button
             key={opt.text}
-            className={`w-8 h-8 flex justify-center items-center leading-9 text-xl rounded-full m-1 bg-gray-200 dark:bg-slate-700 ${
+            className={`w-8 h-8 flex justify-center items-center leading-9 text-xl rounded-full m-2 bg-gray-200 dark:bg-slate-700 ${
               theme === opt.text && 'text-main-color '
             } `}
           >
@@ -68,7 +68,7 @@ const Themes = () => {
               theme === opt.text && 'text-main-color'
             } `}
           >
-            {opt.text}
+            {/* {opt.text} */}
           </p>
         </div>
       ))}

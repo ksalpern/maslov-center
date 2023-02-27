@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Themes from "../themesMod/Themes";
-import { MdKeyboardArrowDown, MdPalette,MdLanguage } from "react-icons/md";
+import { MdKeyboardArrowDown, MdPalette, MdLanguage } from "react-icons/md";
 // import { HiLanguage } from "react-icons/hi";
 import { AiFillSetting } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
-const SiteSettings = () => {
+const SiteSettings = (props) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
     setOpen(!open);
@@ -17,6 +18,11 @@ const SiteSettings = () => {
   const handleOpenLanguages = () => {
     setOpenLanguages(!openLanguages);
   };
+
+  function handleLanguage(lang) {
+    props.i18n.changeLanguage(lang);
+  }
+
   return (
     <div>
       <div
@@ -32,7 +38,7 @@ const SiteSettings = () => {
         >
           <div className="flex">
             <AiFillSetting className="text-2xl mr-2" />
-            <p>Налаштування</p>
+            <p>{props.t("Navbar.Settings")}</p>
           </div>
           <div className={open ? "rotate-180 ease-in-out" : ""}>
             <MdKeyboardArrowDown />
@@ -56,7 +62,7 @@ const SiteSettings = () => {
             >
               <div className="flex">
                 <MdPalette className="text-2xl mr-2" />
-                <p>Теми</p>
+                <p>{props.t("Navbar.Themes")}</p>
               </div>
               <div className={open ? "rotate-180 ease-in-out" : ""}>
                 <MdKeyboardArrowDown />
@@ -85,7 +91,7 @@ const SiteSettings = () => {
             >
               <div className="flex">
                 <MdLanguage className="text-2xl mr-2" />
-                <p>Мови</p>
+                <p>{props.t("Navbar.Languages")}</p>
               </div>
               <div className={open ? "rotate-180 ease-in-out" : ""}>
                 <MdKeyboardArrowDown />
@@ -98,7 +104,20 @@ const SiteSettings = () => {
                   : "h-0 overflow-hidden"
               }`}
             >
-              <p className="ml-6">ua/en/pl/sp</p>
+              <p className="ml-6 flex">
+                <button
+                  className={`w-8 h-8 flex justify-center items-center leading-9 text-xl rounded-full m-2 bg-gray-200 dark:bg-slate-700`}
+                  onClick={() => handleLanguage("en")}
+                >
+                  <p>EN</p>
+                </button>
+                <button
+                  className={`w-8 h-8 flex justify-center items-center leading-9 text-xl rounded-full m-2 bg-gray-200 dark:bg-slate-700`}
+                  onClick={() => handleLanguage("ua")}
+                >
+                  <p>UA</p>
+                </button>
+              </p>
             </div>
           </div>
         </div>

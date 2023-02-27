@@ -4,7 +4,7 @@ import { GiHealing} from "react-icons/gi";
 import SiteSettings from "../siteSettings/SiteSettings";
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [nav, setNav] = useState(false);
 
   return (
@@ -50,7 +50,7 @@ const NavBar = () => {
             <div className="text-2xl mr-2">
               <AiFillHome />
             </div>
-            <p className=" ">Головна</p>
+            <p className=" ">{props.t('Navbar.Home')}</p>
           </Link>
           <Link
             className="flex items-center navItemHover p-2"
@@ -62,10 +62,10 @@ const NavBar = () => {
             <div className="text-2xl mr-2">
               <GiHealing />
             </div>
-            <p className=" ">Послуги</p>
+            <p className=" ">{props.t('Navbar.Services')}</p>
           </Link>
 
-          <SiteSettings />
+          <SiteSettings t={props.t}  i18n={props.i18n}/>
         </div>
       </nav>
     </div>
