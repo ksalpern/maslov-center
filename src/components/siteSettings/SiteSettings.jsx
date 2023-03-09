@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Themes from "../themesMod/Themes";
+import Themes from "../ThemesMod/Themes";
 import { MdKeyboardArrowDown, MdPalette, MdLanguage } from "react-icons/md";
 // import { HiLanguage } from "react-icons/hi";
 import { AiFillSetting } from "react-icons/ai";
@@ -64,7 +64,7 @@ const SiteSettings = (props) => {
                 <MdPalette className="text-2xl mr-2" />
                 <p>{props.t("Navbar.Themes")}</p>
               </div>
-              <div className={open ? "rotate-180 ease-in-out" : ""}>
+              <div className={openThemes ? "rotate-180 ease-in-out" : ""}>
                 <MdKeyboardArrowDown />
               </div>
             </button>
@@ -93,7 +93,7 @@ const SiteSettings = (props) => {
                 <MdLanguage className="text-2xl mr-2" />
                 <p>{props.t("Navbar.Languages")}</p>
               </div>
-              <div className={open ? "rotate-180 ease-in-out" : ""}>
+              <div className={openLanguages ? "rotate-180 ease-in-out" : ""}>
                 <MdKeyboardArrowDown />
               </div>
             </button>

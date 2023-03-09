@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
 import { GiHealing} from "react-icons/gi";
-import SiteSettings from "../siteSettings/SiteSettings";
+import SiteSettings from "../SiteSettings/SiteSettings";
 import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
@@ -28,7 +28,7 @@ const NavBar = (props) => {
         }
       ></div>
       <nav
-        className={`font-bold border border-t-0 border-main-color rounded-b-2xl w-80 flex flex-col z-50 absolute pb-3 right-0 ease-in-out customContainer container duration-500 bg-main-light-bg dark:bg-main-dark-bg 
+        className={`font-bold border border-t-0 border-main-color rounded-b-2xl w-full sm:w-80 flex flex-col z-50 absolute pb-3 right-0 ease-in-out customContainer container duration-500 bg-main-light-bg dark:bg-main-dark-bg 
       ${nav ? "scale-100 top-0 opacity-100" : "scale-0 -top-32 opacity-0"}`}
       >
         <div

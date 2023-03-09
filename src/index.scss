@@ -34,13 +34,49 @@
   h1 {
     @apply font-extrabold text-center md:text-start text-2xl sm:text-3xl lg:text-4xl xl:text-5xl;
   }
-  
+
+  header p {
+    @apply pb-0;
+  }
   p {
     @apply pb-4;
   }
 }
 
 .slideItem {
-  height: calc(300px + (600 - 300) * ((100vw - 360px) / (1280 - 360)));
   max-height: 600px;
+  // height: calc(300px + (600 - 300) * ((100vw - 360px) / (768 - 360)));
+}
+@media (min-width: 0px) {
+  .slideItem {
+    background-color: red;
+    height: calc(250px + (450 - 250) * ((100vw - 320px) / (768 - 320)));
+  }
+}
+@media (min-width: 769px) {
+  .slideItem {
+    background-color: red;
+    height: calc(300px + (450 - 300) * ((100vw - 768px) / (1000 - 768)));
+  }
+}
+@media (min-width: 1001px) {
+  .slideItem {
+    background-color: red;
+    height: calc(300px + (450 - 300) * ((100vw - 1001px) / (1280 - 1001)));
+  }
+}
+// @media (max-width: 1000px) {
+//   .slideItem {
+//     height: calc(300px + (450 - 300) * ((100vw - 768px) / (1000 - 768)));
+//     background-color: red;
+//   }
+// }
+.slick-slide {
+  padding: 0 20px;
+}
+.banner{
+  background-image: url(../public/assets/main2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
