@@ -4,7 +4,7 @@
 
 @layer base {
   .app {
-    @apply bg-main-light-bg dark:bg-main-dark-bg min-h-screen text-main-color duration-500;
+    @apply bg-main-light-bg dark: bg-main-dark-bg min-h-screen text-main-color duration-500;
   }
 
   ::-webkit-scrollbar {
@@ -12,19 +12,35 @@
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-slate-300 dark:bg-main-dark-bg;
+    @apply bg-slate-300 dark: bg-main-dark-bg;
   }
 
   ::-webkit-scrollbar-thumb {
     @apply bg-main-color;
   }
+
   .customContainer {
     @apply px-3;
   }
+
   .mainHeader {
     @apply sticky top-0 z-50;
   }
+
   .navItemHover {
-    @apply hover:bg-slate-200 dark:hover:bg-zinc-600 hover:bg-opacity-20 rounded-md duration-200;
+    @apply hover: bg-slate-200 dark:hover:bg-zinc-600 hover:bg-opacity-20 rounded-md duration-200;
   }
+
+  h1 {
+    @apply font-extrabold text-center md: text-start text-2xl sm:text-3xl lg:text-4xl xl:text-5xl
+  }
+
+  p {
+    @apply pb-4
+  }
+}
+
+.slideItem {
+  height: calc(300px + (600 - 300) * ((100vw - 360px) / (1280 - 360)));
+  max-height: 600px;
 }
