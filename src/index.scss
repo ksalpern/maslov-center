@@ -31,14 +31,18 @@
     @apply hover:bg-slate-200 dark:hover:bg-zinc-600 hover:bg-opacity-20 rounded-md duration-200;
   }
   .whyWeLi {
-    @apply text-xs smd:text-base md:text-base flex items-start justify-center gap-4
+    @apply text-xs smd:text-base md:text-xl flex items-start  gap-4
   }
   .liIcon {
-    @apply text-lg md:text-xl 
+    @apply text-lg md:text-xl lg:text-3xl
   }
 
   h1 {
     @apply font-extrabold text-center text-xl smd:text-2xl md:text-3xl lg:text-4xl xl:text-5xl;
+  }
+
+  h2{
+    @apply text-center text-xl smd:text-4xl font-bold mb-10 md:mb-16;
   }
 
   header p {
@@ -46,6 +50,9 @@
   }
   p {
     @apply pb-3;
+  }
+  .btn{
+    @apply duration-300 cursor-pointer hover:scale-110  inline-block bg-main-color opacity-90 w-fit rounded-full mx-auto text-white px-4 md:py-2 font-medium md:text-lg  lg:text-xl shadow-white shadow-inner
   }
 }
 
@@ -55,20 +62,17 @@
 }
 @media (min-width: 0px) {
   .slideItem {
-    background-color: red;
     height: calc(250px + (450 - 250) * ((100vw - 320px) / (768 - 320)));
   }
 }
 @media (min-width: 769px) {
   .slideItem {
-    background-color: red;
     height: calc(300px + (450 - 300) * ((100vw - 768px) / (1000 - 768)));
   }
 }
 @media (min-width: 1001px) {
   .slideItem {
-    background-color: red;
-    height: calc(300px + (450 - 300) * ((100vw - 1001px) / (1280 - 1001)));
+    height: calc(300px + (380 - 300) * ((100vw - 1001px) / (1280 - 1001)));
   }
 }
 // @media (max-width: 1000px) {
@@ -78,7 +82,12 @@
 //   }
 // }
 .slick-slide {
-  padding: 0 20px;
+  // padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .slick-slide {
+    padding: 0 20px;
+  }
 }
 .banner{
   background-image: url(../public/assets/Exclude.svg);

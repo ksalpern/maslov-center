@@ -1,12 +1,13 @@
 import React from 'react'
 import { BsFillPersonCheckFill } from 'react-icons/bs'
-import {VscOrganization} from 'react-icons/vsc'
+import {BiTimeFive} from 'react-icons/bi'
 import {AiOutlineApartment} from 'react-icons/ai'
+import {GiFlyingFlag} from 'react-icons/gi'
 
 const WhyWe = props => {
   return (
     <section className='mt-20 px-5'>
-      <h2 className='text-center text-xl smd:text-4xl font-bold mb-10 md:mb-16'>
+      <h2 className=''>
         {props.t('WhyWe.Title')}
       </h2>
       <div className='flex flex-col md:flex-row md:items-start items-center justify-between gap-5 lg:gap-16'>
@@ -25,9 +26,15 @@ const WhyWe = props => {
           </li>
           <li className='whyWeLi'>
             <div className='liIcon'>
-              <VscOrganization />
+              <BiTimeFive />
             </div>
             <p>{props.t('WhyWe.ThirdPros')}</p>
+          </li>
+          <li className='whyWeLi'>
+            <div className='liIcon'>
+              <GiFlyingFlag />
+            </div>
+            <p>{props.t('WhyWe.Forth')}</p>
           </li>
         </ul>
         <div className='lg:max-w-lg rounded-2xl overflow-hidden'>

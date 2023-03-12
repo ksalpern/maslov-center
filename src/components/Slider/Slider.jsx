@@ -17,7 +17,7 @@ const BannerItems = ({ slides }) => {
     const { onClick } = props;
     return (
       <div
-        className="absolute top-1/2 right-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center p-1 md:p-2 rounded-full"
+        className="absolute top-1/2 right-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center p-2 md:p-3 rounded-full"
         onClick={onClick}
       >
         <button className="text-base md:text-3xl">
@@ -30,7 +30,7 @@ const BannerItems = ({ slides }) => {
     const { onClick } = props;
     return (
       <div
-        className="absolute top-1/2 left-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center p-1 md:p-2 rounded-full"
+        className="absolute top-1/2 left-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center p-2 md:p-3 rounded-full"
         onClick={onClick}
       >
         <button className="text-base md:text-3xl">
@@ -42,7 +42,7 @@ const BannerItems = ({ slides }) => {
   const settingsSlider = {
     dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     lazyLoad: true,
