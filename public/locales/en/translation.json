@@ -20,19 +20,36 @@
   },
   "Services": {
     "Titles": {
-      "mainTitle": "Our services",
-      "trainingTitle": "Individual physical training",
-      "massageTitle": "Massage",
-      "phytotherapyTitle": "Phytotherapy",
-      "yogaTitle": "Yoga",
-      "phytotherapeuticBarrelTitle": "Phytotherapeutic barrel"
+      "MainTitle": "Our services",
+      "TrainingTitle": "Individual physical training",
+      "MassageTitle": "Massage",
+      "PhytotherapyTitle": "Phytotherapy",
+      "YogaTitle": "Yoga",
+      "PhytotherapeuticBarrelTitle": "Phytotherapeutic barrel"
     },
-    "Descriptions": {
-      "Training": "",
-      "Massage": "",
-      "Phytotherapy": "",
-      "Yoga": "",
-      "PhytotherapeuticBarrel": ""
+    "Training": {
+      "MTB": "Тренажер Бубновського (МТБ)",
+      "MTBDescription": "",
+      "Rule": "Rule",
+      "RuleDescription": "При тренуванні на тренажері «ПравІло» тіло людини растягується в горизонтальній площині за допомогою власної ваги або дозованого навантаження. У минулому він широко використовувався для досягнення різних цілей: у воїнів він входив до системи військової підготовки, а прості люди відновлювали здоров'я. Нині «ПравІло» стає все більш популярним як силовий тренажер, що дозволяє задіяти багато м'язів і покращує роботу організму. Заняття на тренажері активують процеси саморегуляції організму та сприяють до позитивних змін в опорно-руховому апараті, безпосередньо відповідаючому за м'язову діяльність. Під час тренувань, завдяки вивільненню суглоба, легких згинаннях при напруженні та в комплексі з правильним диханням, в організмі відбуваються фізіологічні процеси, пов'язані з рясним виділенням синовіальної (міжсуглобової) рідини, яка живить хрящову тканину, бере участь у метаболічному обміні в суглобах, видаляє з них через лімфатичні судини мертві клітини, виконує бар'єрну захисно-імунну функцію та є природньою змащувальною рідиною в суглобах. Покращується м'язовий тонус. Дуже корисні тренування на 'ПравІло' для людей з проблемами хребта, а також для їх профілактики. Під час витягування хребта збільшуються міжхребцеві проміжки, що зменшує стискання нервів, знижує внутрішньодисковий тиск, відновлюється циркуляція крові, знімаються болісні відчуття, а головне, розтяжки заважають утворенню застійних явищ в хребті, що є відмінною профілактикою сколіозів, остеохондрозів, радикулітів і т.д.",
+      "": ""
+    },
+    "Massage": {
+      "Description": "Massage therapy as a complementary medicine helps in treating various health conditions such as arthritis, migraine, and depression. It examines how massage therapy can help alleviate symptoms, such as pain, inflammation, and muscle tension, through its physiological effects on the body. It also highlights the importance of integrating massage therapy into conventional medical treatments for optimal results.",
+      "Sedative": "Sedative (soothing) massage",
+      "SedativeDescription": "Sedative massage is a gentle and relaxing form of massage therapy that aims to reduce stress and promote relaxation. It typically involves slow, rhythmic strokes and gentle pressure applied to the muscles and soft tissues of the body. This type of massage can help alleviate anxiety, tension, and promote better sleep.",
+      "Therapeutic": "Therapeutic massage",
+      "TherapeuticDescription": "Therapeutic massage is a form of massage therapy that focuses on addressing specific health issues or conditions. The massage therapist may use a variety of techniques, such as deep tissue massage, myofascial release, and trigger point therapy, to target areas of tension, pain, or dysfunction in the body. The goal of therapeutic massage is to relieve pain, improve range of motion, reduce stress and anxiety, and promote overall relaxation and well-being. This type of massage may be beneficial for individuals with chronic pain, injuries, or conditions such as arthritis or fibromyalgia. It is important to consult with a licensed massage therapist and healthcare provider before receiving therapeutic massage."
+    },
+    "Phytotherapy": {
+      "Description": ""
+    },
+    "Yoga": {
+      "Description": ""
+    },
+    "PhytotherapeuticBarrel": {
+      "Description": "This therapy involves the use of heated barrel cedar cylinders to promote relaxation and relieve muscle tension.",
+      "Benefits": "Benefits of Barrel Cedar Therapy: The heat from the cedar cylinders can help improve circulation, reduce inflammation, and provide a soothing effect for those experiencing stress or anxiety. While generally considered safe, it is important to seek out a qualified practitioner and disclose any underlying medical conditions or sensitivities to heat before undergoing this therapy."
     }
   },
   "Info": {

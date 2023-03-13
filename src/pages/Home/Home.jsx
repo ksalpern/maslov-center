@@ -45,7 +45,11 @@ const Home = props => {
           openIndex={openIndex}
           onAccordionClick={handleAccordionClick}
         >
-          <p>Content for section 2 goes here.</p>
+          <p className='font-light text-slate-700'>{props.t('Services.Massage.Description')}</p>
+          <h4>{props.t('Services.Massage.Sedative')}</h4>
+          <p>{props.t('Services.Massage.SedativeDescription')}</p>
+          <h4>{props.t('Services.Massage.Therapeutic')}</h4>
+          <p>{props.t('Services.Massage.TherapeuticDescription')}</p>
         </Accordion>
         <Accordion
           index={2}

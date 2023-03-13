@@ -27,12 +27,28 @@
       "yogaTitle": "Йога",
       "phytotherapeuticBarrelTitle": "Фітотерапевтична бочка"
     },
-    "Descriptions": {
-      "Training": "",
-      "Massage": "",
-      "Phytotherapy": "",
-      "Yoga": "",
-      "PhytotherapeuticBarrel": ""
+    "Training": {
+      "Description": "",
+      "": "",
+      "": "",
+      "": "",
+      "": ""
+    },
+    "Massage": {
+      "Description": "Massage therapy as a complementary medicine helps in treating various health conditions such as arthritis, migraine, and depression. It examines how massage therapy can help alleviate symptoms, such as pain, inflammation, and muscle tension, through its physiological effects on the body. It also highlights the importance of integrating massage therapy into conventional medical treatments for optimal results.",
+      "Sedative": "Sedative (soothing) massage",
+      "SedativeDescription": "Sedative massage is a gentle and relaxing form of massage therapy that aims to reduce stress and promote relaxation. It typically involves slow, rhythmic strokes and gentle pressure applied to the muscles and soft tissues of the body. This type of massage can help alleviate anxiety, tension, and promote better sleep.",
+      "Therapeutic": "Therapeutic massage",
+      "TherapeuticDescription": "Therapeutic massage is a form of massage therapy that focuses on addressing specific health issues or conditions. The massage therapist may use a variety of techniques, such as deep tissue massage, myofascial release, and trigger point therapy, to target areas of tension, pain, or dysfunction in the body. The goal of therapeutic massage is to relieve pain, improve range of motion, reduce stress and anxiety, and promote overall relaxation and well-being. This type of massage may be beneficial for individuals with chronic pain, injuries, or conditions such as arthritis or fibromyalgia. It is important to consult with a licensed massage therapist and healthcare provider before receiving therapeutic massage."
+    },
+    "Phytotherapy": {
+      "Description": ""
+    },
+    "Yoga": {
+      "Description": ""
+    },
+    "PhytotherapeuticBarrel": {
+      "Description": ""
     }
   },
   "Info": {
