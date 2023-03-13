@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 
 const Logo = () => {
   return (
-    <Link to='/'>
+    <Link to='home' smooth={true} offset={-70}>
       <div className='flex items-center'>
         <p className='text-main-color text-center h-fit min-w text-2xl min-w-logo'>
           Maslov

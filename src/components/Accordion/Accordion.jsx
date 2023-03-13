@@ -15,7 +15,9 @@ function Accordion (props) {
         onClick={toggleAccordion}
       >
         <p className='font-semibold p-0'>{props.title}</p>
-        <MdKeyboardArrowDown className={`text-xl duration-300 ${isOpen ? 'rotate-180' : ''}`} />
+        <MdKeyboardArrowDown
+          className={`text-xl duration-300 ${isOpen ? 'rotate-180' : ''}`}
+        />
       </h3>
       {isOpen && <div className='accordion-content'>{props.children}</div>}
     </div>

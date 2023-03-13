@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import axios from 'axios'
 import { homeData } from '../../Data'
 import BannerItems from '../../components/Slider/Slider'
 import WhyWe from '../../components/WhyWe/WhyWe'
@@ -14,7 +13,7 @@ const Home = props => {
   }
 
   return (
-    <div className='relative min-h-screen h-fit pb-4 '>
+    <div id='home' className='relative min-h-screen h-fit pb-4 '>
       <div className=''>
         <div className=' banner relative mx-auto w-[100vw] h-[100vw] sm:w-[70vw] sm:h-[70vw] max-w-[1000px] max-h-[1000px] flex flex-col justify-center gap-2 '>
           <h1 className='px-8 md:px-12 '>{props.t('Banner.Title')}</h1>
@@ -29,7 +28,9 @@ const Home = props => {
 
       <WhyWe t={props.t} />
       <section className='mt-20 px-5'>
-        <h2 className=''>{props.t('Services.Titles.mainTitle')}</h2>
+        <h2 id='services' className=''>
+          {props.t('Services.Titles.mainTitle')}
+        </h2>
         <Accordion
           index={0}
           title={props.t('Services.Titles.trainingTitle')}
@@ -70,7 +71,7 @@ const Home = props => {
         >
           <p>Content for section 2 goes here.</p>
         </Accordion>
-        <BannerItems slides={slides}/>
+        <BannerItems slides={slides} />
       </section>
     </div>
   )

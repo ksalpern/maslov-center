@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Service from "./pages/Service";
 import Error from "./pages/Error";
 import Header from "./components/Header/Header";
 import { useTranslation } from "react-i18next";
@@ -18,7 +17,6 @@ function App() {
         <Header t={t} i18n={i18n} />
         <Routes>
           <Route path="/" element={<Home t={t} i18n={i18n} />}></Route>
-          <Route path="/service" element={<Service />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
         <Footer t={t} i18n={i18n} />
