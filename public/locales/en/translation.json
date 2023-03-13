@@ -9,7 +9,7 @@
   "Banner": {
     "Title": "Your path to total wellness starts here!",
     "Subtitle": "Restoring health is a process that requires time and patience. Our experts know how to help you navigate this path, so you can once again enjoy a full and active life.",
-    "Button":"Contact Us"
+    "Button": "Contact Us"
   },
   "WhyWe": {
     "Title": "Why we?",
@@ -18,7 +18,24 @@
     "ThirdPros": "Flexible working hours that allow you to conveniently plan your visits to the center.",
     "Forth": "Our goal is not only to restore health but also to maintain it for a long period. That's why we provide our clients with advice and recommendations to maintain a successful outcome."
   },
-  "Services":{
-    "Title":"Our Services"
+  "Services": {
+    "Titles": {
+      "mainTitle": "Our services",
+      "trainingTitle": "Individual physical training",
+      "massageTitle": "Massage",
+      "phytotherapyTitle": "Phytotherapy",
+      "yogaTitle": "Yoga",
+      "phytotherapeuticBarrelTitle": "Phytotherapeutic barrel"
+    },
+    "Descriptions": {
+      "Training": "",
+      "Massage": "",
+      "Phytotherapy": "",
+      "Yoga": "",
+      "PhytotherapeuticBarrel": ""
+    }
+  },
+  "Info": {
+    "Location": "Sumy, Ukraine"
   }
 }

@@ -21,7 +21,7 @@ function App() {
           <Route path="/service" element={<Service />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
-        <Footer />
+        <Footer t={t} i18n={i18n} />
       </div>
     </div>
   );
