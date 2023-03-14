@@ -9,7 +9,7 @@ function Accordion (props) {
   }
 
   return (
-    <div className='accordion border-b border-main-color'>
+    <div className='accordion border-b border-main-color cursor-pointer py-1 smd:py-3'>
       <h3
         className='accordion-header text-lg md:text-2xl flex items-center justify-between py-2'
         onClick={toggleAccordion}
@@ -19,7 +19,7 @@ function Accordion (props) {
           className={`text-xl duration-300 ${isOpen ? 'rotate-180' : ''}`}
         />
       </h3>
-      {isOpen && <div className='accordion-content'>{props.children}</div>}
+      {isOpen && <div className=''>{props.children}</div>}
     </div>
   )
 }
