@@ -1,17 +1,9 @@
-import React, { useState } from 'react'
-import { homeData } from '../../Data'
+import React from 'react'
 import BannerItems from '../../components/Slider/Slider'
 import WhyWe from '../../components/WhyWe/WhyWe'
 import Accordion from '../../components/Accordion/Accordion'
 
 const Home = props => {
-  const [slides, setSlides] = useState(homeData)
-  const [openIndex, setOpenIndex] = useState(-1)
-
-  const handleAccordionClick = index => {
-    setOpenIndex(index === openIndex ? -1 : index)
-  }
-
   return (
     <div id='home' className='relative min-h-screen h-fit pb-4 '>
       <div className=''>
@@ -32,12 +24,7 @@ const Home = props => {
           {props.t('Services.Titles.MainTitle')}
         </h2>
         {/* TRAINING */}
-        <Accordion
-          index={0}
-          title={props.t('Services.Titles.TrainingTitle')}
-          openIndex={openIndex}
-          onAccordionClick={handleAccordionClick}
-        >
+        <Accordion index={0} title={props.t('Services.Titles.TrainingTitle')}>
           <p>{props.t('Services.Training.Description')}</p>
 
           <h4>{props.t('Services.Training.MTB')}</h4>
@@ -77,12 +64,7 @@ const Home = props => {
           </div>
         </Accordion>
         {/* MASSAGE */}
-        <Accordion
-          index={1}
-          title={props.t('Services.Titles.MassageTitle')}
-          openIndex={openIndex}
-          onAccordionClick={handleAccordionClick}
-        >
+        <Accordion index={1} title={props.t('Services.Titles.MassageTitle')}>
           <p>{props.t('Services.Massage.Description')}</p>
 
           <h4>{props.t('Services.Massage.Sedative')}</h4>
@@ -115,8 +97,6 @@ const Home = props => {
         <Accordion
           index={2}
           title={props.t('Services.Titles.PhytotherapyTitle')}
-          openIndex={openIndex}
-          onAccordionClick={handleAccordionClick}
         >
           <p id='phytotherapy'>
             {props.t('Services.Phytotherapy.Description')}
@@ -148,12 +128,7 @@ const Home = props => {
           </div>
         </Accordion>
         {/* YOGA */}
-        <Accordion
-          index={3}
-          title={props.t('Services.Titles.YogaTitle')}
-          openIndex={openIndex}
-          onAccordionClick={handleAccordionClick}
-        >
+        <Accordion index={3} title={props.t('Services.Titles.YogaTitle')}>
           <p>{props.t('Services.Yoga.Description')}</p>
 
           <div className='smd:grid grid-cols-3 gap-5'>
@@ -171,8 +146,6 @@ const Home = props => {
         <Accordion
           index={4}
           title={props.t('Services.Titles.PhytotherapeuticBarrelTitle')}
-          openIndex={openIndex}
-          onAccordionClick={handleAccordionClick}
         >
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
@@ -191,7 +164,7 @@ const Home = props => {
         <h2 id='gallery' className=''>
           {props.t('Gallery.Title')}
         </h2>
-        <BannerItems slides={slides} />
+        <BannerItems />
       </section>
     </div>
   )

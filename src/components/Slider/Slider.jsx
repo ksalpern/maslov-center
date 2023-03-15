@@ -1,5 +1,4 @@
 import React from 'react'
-// import BannerItem from './BannerItem'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
@@ -10,9 +9,7 @@ import {
   MdOutlineKeyboardArrowRight
 } from 'react-icons/md'
 
-// import SlideImg from '/assets/massage1.jpg'
-
-const BannerItems = ({ slides }) => {
+const BannerItems = () => {
   const SampleNextArrow = props => {
     const { onClick } = props
     return (
