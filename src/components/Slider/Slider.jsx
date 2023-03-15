@@ -1,44 +1,44 @@
-import React from "react";
+import React from 'react'
 // import BannerItem from './BannerItem'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
-import Slider from "react-slick";
+import Slider from 'react-slick'
 
 import {
   MdOutlineKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight,
-} from "react-icons/md";
+  MdOutlineKeyboardArrowRight
+} from 'react-icons/md'
 
 // import SlideImg from '/assets/massage1.jpg'
 
 const BannerItems = ({ slides }) => {
-  const SampleNextArrow = (props) => {
-    const { onClick } = props;
+  const SampleNextArrow = props => {
+    const { onClick } = props
     return (
       <div
-        className="absolute top-1/2 -translate-y-1/2 right-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center  rounded-full"
+        className='absolute top-1/2 -translate-y-1/2 right-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center  rounded-full'
         onClick={onClick}
       >
-        <button className="text-[30px] lg:text-[50px]">
+        <button className='text-[30px] lg:text-[50px]'>
           <MdOutlineKeyboardArrowRight />
         </button>
       </div>
-    );
-  };
-  const SamplePrevArrow = (props) => {
-    const { onClick } = props;
+    )
+  }
+  const SamplePrevArrow = props => {
+    const { onClick } = props
     return (
       <div
-        className="absolute top-1/2 -translate-y-1/2 left-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center  rounded-full"
+        className='absolute top-1/2 -translate-y-1/2 left-2 z-10 bg-main-dark-bg  bg-opacity-60 flex justify-center items-center  rounded-full'
         onClick={onClick}
       >
-        <button className="text-[30px] lg:text-[50px]">
+        <button className='text-[30px] lg:text-[50px]'>
           <MdOutlineKeyboardArrowLeft />
         </button>
       </div>
-    );
-  };
+    )
+  }
   const settingsSlider = {
     dots: true,
     infinite: true,
@@ -56,52 +56,127 @@ const BannerItems = ({ slides }) => {
         breakpoint: 1000,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-        },
+          slidesToScroll: 1
+        }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+          slidesToScroll: 1
+        }
+      }
+    ]
+  }
 
   return (
-    <div className="relative overflow-hidden my-3 md:my-8">
-      <Slider {...settingsSlider} className="">
-        <div className="relative slideItem">
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            {/* <img className="w-full" src="/assets/massage1.jpg" alt="" /> */}
-            <iframe className="z-0 w-full h-full" src="https://www.youtube.com/embed/rLfAqlGJhFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div className='relative overflow-hidden my-3 md:my-8'>
+      <Slider {...settingsSlider} className=''>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/pravilo1.jpg' alt='' />
           </div>
           <p></p>
         </div>
-        <div className="relative slideItem">
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            {/* <img className="w-full" src="/assets/massage1.jpg" alt="" /> */}
-            <iframe className="z-0 w-full h-full" src="https://www.youtube.com/embed/rLfAqlGJhFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <iframe
+              className='z-0 w-full h-full'
+              src='https://www.youtube.com/embed/ikcSUS8w3kk'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
           </div>
           <p></p>
         </div>
-        <div className="relative slideItem">
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            {/* <img className="w-full" src="/assets/massage1.jpg" alt="" /> */}
-            <iframe className="z-0 w-full h-full" src="https://www.youtube.com/embed/rLfAqlGJhFA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/massage1.jpg' alt='' />
           </div>
           <p></p>
         </div>
-        <div className="relative slideItem">
-          <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-            <img className="w-full" src="/assets/massage1.jpg" alt="" />
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            {/* <img className="w-full" src="/assets/massage1.jpg" alt="" /> */}
+            <iframe
+              className='z-0 w-full h-full'
+              src='https://www.youtube.com/embed/rLfAqlGJhFA'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/glr1.jpg' alt='' />
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <iframe
+              className='z-0 w-full h-full'
+              src='https://www.youtube.com/embed/bytJcBN2s6k'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/glr2.jpg' alt='' />
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <iframe
+              className='z-0 w-full h-full'
+              src='https://www.youtube.com/embed/CIMVSG4JaNg'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/glr3.jpg' alt='' />
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <iframe
+              className='z-0 w-full h-full'
+              src='https://www.youtube.com/embed/tCdpoTYCApY'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p></p>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img className='w-full' src='/assets/good.jpg' alt='' />
           </div>
           <p></p>
         </div>
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default BannerItems;
+export default BannerItems

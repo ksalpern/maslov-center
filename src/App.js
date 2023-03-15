@@ -11,7 +11,10 @@ function App() {
   return (
     <div className="app ">
       <div className="max-w-screen-xl w-full mx-auto ">
-        <div className="fixed w-[100vw] h-[100vw] opacity-20  dark:opacity-5 top-[20%] pointer-events-none flex justify-center items-start">
+        {/* <div className="fixed w-[100vw] h-[100vw] opacity-20  dark:opacity-5 top-[20%] pointer-events-none flex justify-center items-center">
+          <img className="w-1/2" src="/logo.svg" alt="" />
+        </div> */}
+        <div className="fixed w-[100vw] h-[100vw] max-w-[1440px] max-h-[1440px]  pointer-events-none flex justify-center items-center opacity-20  dark:opacity-5">
           <img className="w-1/2" src="/logo.svg" alt="" />
         </div>
         <Header t={t} i18n={i18n} />
