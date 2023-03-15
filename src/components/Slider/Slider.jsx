@@ -74,9 +74,12 @@ const BannerItems = ({ slides }) => {
       <Slider {...settingsSlider} className=''>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/pravilo1.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/pravilo1.jpg'
+              alt='maslov pravilo'
+            />
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
@@ -89,17 +92,18 @@ const BannerItems = ({ slides }) => {
               allowfullscreen
             ></iframe>
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/massage1.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/massage.png'
+              alt='maslov massage'
+            />
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            {/* <img className="w-full" src="/assets/massage1.jpg" alt="" /> */}
             <iframe
               className='z-0 w-full h-full'
               src='https://www.youtube.com/embed/rLfAqlGJhFA'
@@ -109,13 +113,15 @@ const BannerItems = ({ slides }) => {
               allowfullscreen
             ></iframe>
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/glr1.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/glr1.jpg'
+              alt='maslov training'
+            />
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
@@ -128,13 +134,15 @@ const BannerItems = ({ slides }) => {
               allowfullscreen
             ></iframe>
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/glr2.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/glr2.jpg'
+              alt='maslov massage'
+            />
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
@@ -147,13 +155,15 @@ const BannerItems = ({ slides }) => {
               allowfullscreen
             ></iframe>
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/glr3.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/glr3.jpg'
+              alt='maslov training'
+            />
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
@@ -166,11 +176,14 @@ const BannerItems = ({ slides }) => {
               allowfullscreen
             ></iframe>
           </div>
-          <p></p>
         </div>
         <div className='relative slideItem'>
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
-            <img className='w-full' src='/assets/good.jpg' alt='' />
+            <img
+              className='w-full'
+              src='/assets/good.jpg'
+              alt='maslov good sign'
+            />
           </div>
           <p></p>
         </div>

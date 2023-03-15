@@ -20,7 +20,7 @@ function App() {
         <Header t={t} i18n={i18n} />
         <Routes>
           <Route path="/" element={<Home t={t} i18n={i18n} />}></Route>
-          <Route path="*" element={<Error />}></Route>
+          <Route path="*" element={<Error t={t} i18n={i18n} />}></Route>
         </Routes>
         <Footer t={t} i18n={i18n} />
       </div>

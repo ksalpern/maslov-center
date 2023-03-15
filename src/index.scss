@@ -62,6 +62,9 @@
   .btn{
     @apply duration-300 cursor-pointer hover:scale-110  inline-block bg-main-color opacity-90 w-fit rounded-full mx-auto text-white px-4 md:py-2 font-medium md:text-lg  lg:text-xl shadow-white shadow-inner
   }
+  .serviseImg{
+    @apply rounded-2xl mb-3
+  }
 }
 
 .slideItem {
@@ -70,7 +73,7 @@
 }
 @media (min-width: 0px) {
   .slideItem {
-    height: calc(250px + (450 - 250) * ((100vw - 320px) / (768 - 320)));
+    height: calc(300px + (600 - 300) * ((100vw - 320px) / (768 - 320)));
   }
 }
 @media (min-width: 769px) {

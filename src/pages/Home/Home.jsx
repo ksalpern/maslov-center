@@ -46,13 +46,13 @@ const Home = props => {
             <p className='smd:col-start-1 smd:col-end-3 '>
               {props.t('Services.Training.MTBDescription')}
             </p>
-            <img className=' rounded-2xl ' src='/assets/mtb1.jpg' alt='' />
+            <img className=' serviseImg' src='/assets/mtb1.jpg' alt='' />
           </div>
 
           <h4>{props.t('Services.Training.Rule')}</h4>
 
           <div className='smd:grid grid-cols-3 gap-5'>
-            <img className=' rounded-2xl ' src='/assets/pravilo.jpg' alt='' />
+            <img className='serviseImg ' src='/assets/pravilo.jpg' alt='' />
             <p className='smd:col-start-2 smd:col-end-4 '>
               {props.t('Services.Training.RuleDescription')}
             </p>
@@ -64,10 +64,18 @@ const Home = props => {
             <p className='smd:col-start-1 smd:col-end-3 '>
               {props.t('Services.Training.GravityShoesDescription')}
             </p>
-            <img className=' rounded-2xl ' src='/assets/boots1.jpg' alt='' />
+            <img className='serviseImg ' src='/assets/boots1.jpg' alt='' />
+          </div>
+
+          <h4>{props.t('Services.Training.Glisson')}</h4>
+
+          <div className='smd:grid grid-cols-3 gap-5'>
+            <img className='serviseImg ' src='/assets/glisson.png' alt='' />
+            <p className='smd:col-start-2 smd:col-end-4 '>
+              {props.t('Services.Training.GlissonDescription')}
+            </p>
           </div>
         </Accordion>
-
         {/* MASSAGE */}
         <Accordion
           index={1}
@@ -84,7 +92,7 @@ const Home = props => {
               {props.t('Services.Massage.SedativeDescription')}
             </p>
             <img
-              className=' rounded-2xl '
+              className='serviseImg mb-4'
               src='/assets/massage2.jpg'
               alt='maslov massage'
             />
@@ -94,7 +102,7 @@ const Home = props => {
 
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
-              className=' rounded-2xl '
+              className='serviseImg '
               src='/assets/massage3.jpg'
               alt='maslov massage'
             />
@@ -103,7 +111,6 @@ const Home = props => {
             </p>
           </div>
         </Accordion>
-
         {/* PHYTOTHERAPY */}
         <Accordion
           index={2}
@@ -111,11 +118,13 @@ const Home = props => {
           openIndex={openIndex}
           onAccordionClick={handleAccordionClick}
         >
-          <p>{props.t('Services.Phytotherapy.Description')}</p>
+          <p id='phytotherapy'>
+            {props.t('Services.Phytotherapy.Description')}
+          </p>
 
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
-              className=' rounded-2xl '
+              className='serviseImg '
               src='/assets/tea.jpg'
               alt='maslov yoga'
             />
@@ -138,7 +147,6 @@ const Home = props => {
             </div>
           </div>
         </Accordion>
-
         {/* YOGA */}
         <Accordion
           index={3}
@@ -150,7 +158,7 @@ const Home = props => {
 
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
-              className=' rounded-2xl '
+              className='serviseImg '
               src='/assets/yoga.jpg'
               alt='maslov yoga'
             />
@@ -159,7 +167,6 @@ const Home = props => {
             </p>
           </div>
         </Accordion>
-
         {/* BARREL */}
         <Accordion
           index={4}
@@ -169,7 +176,7 @@ const Home = props => {
         >
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
-              className=' rounded-2xl '
+              className='serviseImg '
               src='/assets/barrel.jpg'
               alt='maslov massage'
             />

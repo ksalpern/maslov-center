@@ -39,7 +39,7 @@ const WhyWe = props => {
         </ul>
         <div className='lg:max-w-lg rounded-2xl overflow-hidden'>
           <img
-            src='/assets/maslov_centr_169792411_278510293874058_7128783391663055895_n.jpg'
+            src='/assets/whyWe.jpg'
             alt='maslov_centr'
             className=''
           />
