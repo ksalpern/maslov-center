@@ -178,11 +178,19 @@ const BannerItems = () => {
           <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
             <img
               className='w-full'
+              src='/assets/tea1.jpg'
+              alt='maslov good sign'
+            />
+          </div>
+        </div>
+        <div className='relative slideItem'>
+          <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center'>
+            <img
+              className='w-full'
               src='/assets/good.jpg'
               alt='maslov good sign'
             />
           </div>
-          <p></p>
         </div>
       </Slider>
     </div>

@@ -105,7 +105,7 @@ const Home = props => {
           <div className='smd:grid grid-cols-3 gap-5'>
             <img
               className='serviseImg '
-              src='/assets/tea.jpg'
+              src='/assets/tea3.jpg'
               alt='maslov yoga'
             />
             <div className='smd:col-start-2 smd:col-end-4 '>

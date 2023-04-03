@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { TbArrowForward } from 'react-icons/tb'
 
 const Error = (props) => {
   return (
