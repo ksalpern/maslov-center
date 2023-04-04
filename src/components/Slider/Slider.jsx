@@ -179,7 +179,7 @@ const BannerItems = () => {
             <img
               className='w-full'
               src='/assets/tea1.jpg'
-              alt='maslov good sign'
+              alt='maslov tea'
             />
           </div>
         </div>
