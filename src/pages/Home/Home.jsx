@@ -33,13 +33,13 @@ const Home = props => {
             <p className='smd:col-start-1 smd:col-end-3 '>
               {props.t('Services.Training.MTBDescription')}
             </p>
-            <img className=' serviseImg' src='/assets/mtb1.jpg' alt='' />
+            <img className=' serviseImg' src='/assets/mtb1.jpg' alt='maslov mtb' />
           </div>
 
           <h4>{props.t('Services.Training.Rule')}</h4>
 
           <div className='smd:grid grid-cols-3 gap-5'>
-            <img className='serviseImg ' src='/assets/pravilo.jpg' alt='' />
+            <img className='serviseImg ' src='/assets/pravilo.jpg' alt='maslov pravilo' />
             <p className='smd:col-start-2 smd:col-end-4 '>
               {props.t('Services.Training.RuleDescription')}
             </p>
@@ -51,7 +51,7 @@ const Home = props => {
             <p className='smd:col-start-1 smd:col-end-3 '>
               {props.t('Services.Training.GravityShoesDescription')}
             </p>
-            <img className='serviseImg ' src='/assets/boots1.jpg' alt='' />
+            <img className='serviseImg ' src='/assets/boots1.jpg' alt='maslov boots' />
           </div>
 
           <h4>{props.t('Services.Training.Glisson')}</h4>
@@ -106,7 +106,7 @@ const Home = props => {
             <img
               className='serviseImg '
               src='/assets/tea3.jpg'
-              alt='maslov yoga'
+              alt='maslov tea'
             />
             <div className='smd:col-start-2 smd:col-end-4 '>
               <p className='font-semibold smd:text-xl'>
@@ -151,7 +151,7 @@ const Home = props => {
             <img
               className='serviseImg '
               src='/assets/barrel.jpg'
-              alt='maslov massage'
+              alt='maslov barrel'
             />
             <p className='smd:col-start-2 smd:col-end-4 '>
               {props.t('Services.PhytotherapeuticBarrel.Description')}
